@@ -1,7 +1,7 @@
 <html>
 <body>
     <div class="login">
-       <h1>FWI Prediction</h1>
+       <h1>Forest Fire Prediction</h1>
 
         <!-- Main Input For Receiving Query to our ML -->
        <form action="{{ url_for('prediction')}}" method="post">
@@ -22,7 +22,12 @@
            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
        </form>
     <h2>
-       The Forest Fire Prediction: {{results}}
+       The Prediction Result is: {{results}}
+
     </h2>
+        <h3>
+            1: Fire
+            0: Not Fire
+        </h3>
    </body>
 </html>
